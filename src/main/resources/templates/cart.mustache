@@ -23,9 +23,9 @@
     <tr>{{#product}}
         <td>{{name}}</td>
         <td>{{description}}</td>
-        <td>{{price}}</td>
-        <td>{{volume}}</td>
-        <td>{{price * volume}}</td>
+        <td>{{price}} zł</td>
+        <td>{{volume}} szt.</td>
+        <td>{{sum}} zł</td>
         <td>
             <button class="btn btn-info mr-1" (click)="edit(expense, i)">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

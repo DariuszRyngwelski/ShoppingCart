@@ -1,10 +1,24 @@
 package dr.cart;
 
+import org.springframework.format.annotation.NumberFormat;
+
 public class Product {
     private String name;
     private String description;
     private double price;
     private int volume;
+    private double sum;
+
+    public Product() {
+    }
+
+    public Product(String name, String description, double price, int volume) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.volume = volume;
+        this.sum = price * volume;
+    }
 
     public String getName() {
         return name;
@@ -36,5 +50,9 @@ public class Product {
 
     public void setVolume(int volume) {
         this.volume = volume;
+    }
+
+    public double getSum() {
+        return sum;
     }
 }
